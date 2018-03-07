@@ -329,6 +329,7 @@
     <Content Include="bower_components\webcomponentsjs\webcomponents-hi.js.map" />
     <Content Include="bower_components\webcomponentsjs\webcomponents-lite.js.map" />
     <Content Include="bower_components\webcomponentsjs\webcomponents-sd-ce.js.map" />
+    <Content Include="WebComponents\board-game-item.html" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
