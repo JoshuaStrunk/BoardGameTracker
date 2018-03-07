@@ -2,6 +2,7 @@
 
 <dom-module id="board-game-item">
     <template>
+        <iron-image style="width:100px;height:100px;" sizing="contain"  src="[[imgscr]]" ></iron-image>
         <h3>[[name]]</h3>
         <p>[[description]]</p>
     </template>
@@ -12,6 +13,9 @@
             static get properties() {
                 return {
                     name: {
+                        type: String
+                    },
+                    imgscr: {
                         type: String
                     },
                     description: {
