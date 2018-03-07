@@ -1,0 +1,8 @@
+{
+  "name": "BoardGameTracker",
+  "private": true,
+  "dependencies": {
+    "polymer": "v2.5.0",
+    "iron-ajax": "v2.1.3"
+  }
+}
