@@ -26,5 +26,17 @@ namespace BoardGameTracker.Controllers
 
             return View();
         }
+
+        public ActionResult BoardGameList()
+        {
+            return Json( new System.Collections.ArrayList() {
+                    new {
+                        img = "Content/Images/TimeBarons.png"
+                    },
+                    new {
+                        img = "Content/Images/TheSettlersOfCatan.png"
+                    }
+            }, JsonRequestBehavior.AllowGet);
+        }
     }
 }

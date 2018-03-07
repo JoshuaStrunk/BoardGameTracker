@@ -9,9 +9,14 @@
 
     <script src="~/bower_components/webcomponentsjs/webcomponents-loader.js"></script>
 
+    <link rel="import" href="~/bower_components/polymer/polymer-element.html">
+    <link rel="import" href="~/bower_components/polymer/lib/elements/dom-repeat.html" />
     <link rel="import" href="~/bower_components/iron-image/iron-image.html" />
+    <link rel="import" href="~/bower_components/iron-ajax/iron-ajax.html" />
 
     <link rel="import" href="~/WebComponents/board-game-item.html" />
+    <link rel="import" href="~/WebComponents/board-game-list-item.html" />
+    <link rel="import" href="~/WebComponents/board-game-list.html" />
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -22,13 +27,10 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Board Game Tracker", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                 </ul>
             </div>
         </div>
@@ -37,7 +39,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <p>&copy; @DateTime.Now.Year - Joshua Strunk</p>
         </footer>
     </div>
 

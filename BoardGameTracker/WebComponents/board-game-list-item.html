@@ -1,0 +1,19 @@
+﻿<dom-module id="board-game-list-item">
+    <template>
+        <div>
+            <iron-image style="width:200px;height:200px;" sizing="contain" src="[[boardgame.img]]"></iron-image>
+        </div>
+    </template>
+
+    <script>
+        class BoardGameListItem extends Polymer.Element {
+            static get is() { return "board-game-list-item"; }
+            static get properties() {
+                return {
+                    boardgame: "Object"
+                }
+            }
+        }
+        customElements.define(BoardGameListItem.is, BoardGameListItem);
+    </script>
+</dom-module>

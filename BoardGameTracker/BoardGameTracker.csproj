@@ -411,6 +411,16 @@
     <Content Include="bower_components\webcomponentsjs\webcomponents-sd-ce.js" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Images\Coup.png" />
+    <Content Include="Content\Images\Dominion.png" />
+    <Content Include="Content\Images\KingOfTokyo.png" />
+    <Content Include="Content\Images\MachiKoro.png" />
+    <Content Include="Content\Images\PowerGrid.png" />
+    <Content Include="Content\Images\Revolution.png" />
+    <Content Include="Content\Images\SummonerWarsMasterSet.png" />
+    <Content Include="Content\Images\TheSettlersOfCatan.png" />
+    <Content Include="Content\Images\TimeBarons.png" />
+    <Content Include="Content\Images\ZombieDice.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -568,6 +578,8 @@
     <Content Include="bower_components\iron-scroll-target-behavior\package-lock.json" />
     <Content Include="bower_components\iron-scroll-target-behavior\package.json" />
     <Content Include="bower_components\iron-scroll-target-behavior\README.md" />
+    <Content Include="WebComponents\board-game-list-item.html" />
+    <Content Include="WebComponents\board-game-list.html" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />

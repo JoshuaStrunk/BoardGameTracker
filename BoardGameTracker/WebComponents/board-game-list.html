@@ -1,0 +1,24 @@
+﻿<dom-module id="board-game-list">
+    <template>
+        <iron-ajax url="home/boardgamelist" last-response="{{boardgames}}" auto></iron-ajax>
+        <div>Board Game List: </div>
+        <dom-repeat items="{{boardgames}}">
+            <template>
+                <div>
+                    <iron-image style="width:200px;height:200px;" sizing="contain" src="{{item.img}}"></iron-image>
+                </div>
+            </template>
+        </dom-repeat>
+    </template>
+    <script>
+        class BoardGameList extends Polymer.Element {
+            static get is() { return "board-game-list"; }
+            static get properties() {
+                return {
+                    boardgames: Array
+                };
+            }
+        }
+        customElements.define(BoardGameList.is, BoardGameList);
+    </script>
+</dom-module>
