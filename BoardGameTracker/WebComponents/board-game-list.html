@@ -5,31 +5,20 @@
         <style>
             .grid {
                 display: grid;
-                grid-gap: 10px;
+                grid-gap: 15px;
                 grid-template-columns: repeat(auto-fill, 250px);
             }
             .grid-cell {
-                background-color: #808080;
-                border-radius: 10px;
-                border: 3px solid #000000;
+                background-color: #d8d8de;
                 width: 250px;
                 height: 250px;
             }
-            .center {
-                display: block;
-                margin: 25px;
-
-            }
         </style>
         <iron-ajax url="home/boardgamelist" last-response="{{boardgames}}" auto></iron-ajax>
-
-        <div>Board Game List: </div>
         <div class="grid">
-            <dom-repeat items="{{boardgames}}" >
+            <dom-repeat items="{{boardgames}}" as="boardgame" filter="{{_filterBoardGames(typefilter)}}">
                 <template>
-                    <div class="grid-cell">
-                        <iron-image class="center" style="width:200px;height:200px;" sizing="contain" src="Content/Images/{{item.ImgScr}}"></iron-image>
-                    </div>
+                   <board-game-list-item class="grid-cell" boardgame="{{boardgame}}"></board-game-list-item>
                 </template>
             </dom-repeat>
         </div>
@@ -39,7 +28,19 @@
             static get is() { return "board-game-list"; }
             static get properties() {
                 return {
-                    boardgames: Array
+                    boardgames: Array,
+                    typefilter: String
+                };
+            }
+
+            _filterBoardGames(typefilter) {
+                return function (boardgame) {
+                    if (typefilter === null || typefilter === undefined || typefilter === "") {
+                        return true;
+                    }
+                    else {
+                        return boardgame.Type === typefilter;
+                    }
                 };
             }
         }

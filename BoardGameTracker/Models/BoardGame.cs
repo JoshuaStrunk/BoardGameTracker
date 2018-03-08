@@ -17,7 +17,7 @@ namespace BoardGameTracker.Models
         public List<string> Designers { get; set; }
         public List<string> Mechanics { get; set; }
         public int MinPlayers { get; set; }
-        public int MaxPlyaers { get; set; }
+        public int MaxPlayers { get; set; }
 
     }
 
@@ -35,7 +35,7 @@ namespace BoardGameTracker.Models
                 Designers = new List<string>() { "Rikki Tahta" },
                 Mechanics = new List<string>() { "Memory", "Player Elimination", "Deception" },
                 MinPlayers = 2,
-                MaxPlyaers = 6
+                MaxPlayers = 6
             },
             new BoardGame()
             {
@@ -47,7 +47,7 @@ namespace BoardGameTracker.Models
                 Designers = new List<string>() { "Donald X. Vaccarino" },
                 Mechanics = new List<string>() { "Card Drafting", "Deck/Pool Building", "Hand Management" },
                 MinPlayers = 2,
-                MaxPlyaers = 4
+                MaxPlayers = 4
             },
             new BoardGame()
             {
@@ -59,7 +59,7 @@ namespace BoardGameTracker.Models
                 Designers = new List<string>() { "Richard Garfield" },
                 Mechanics = new List<string>() { "Press Your Luck", "Dice Rolling", "Player Elimination" },
                 MinPlayers = 2,
-                MaxPlyaers = 6
+                MaxPlayers = 6
             },
             new BoardGame()
             {
@@ -71,7 +71,7 @@ namespace BoardGameTracker.Models
                 Designers = new List<string>() { "Masao Suganuma" },
                 Mechanics = new List<string>() { "Card Drafting", "Dice Rolling" },
                 MinPlayers = 2,
-                MaxPlyaers = 4
+                MaxPlayers = 4
             },
             new BoardGame()
             {
@@ -83,7 +83,7 @@ namespace BoardGameTracker.Models
                 Designers = new List<string>() { "Friedemann Friese" },
                 Mechanics = new List<string>() { "Auction/Bidding", "Route/Network Building", "Resource Managment" },
                 MinPlayers = 2,
-                MaxPlyaers = 6
+                MaxPlayers = 6
             },
             new BoardGame()
             {
@@ -95,7 +95,7 @@ namespace BoardGameTracker.Models
                 Type = "Strategy",
                 Mechanics = new List<string>() { "Aution/Bidding", "Simultaneous Action" },
                 MinPlayers = 3,
-                MaxPlyaers = 4
+                MaxPlayers = 4
             },
             new BoardGame()
             {
@@ -107,7 +107,7 @@ namespace BoardGameTracker.Models
                 Type = "Strategy",
                 Mechanics = new List<string>() { "Hand Management", "Grid Movement" },
                 MinPlayers = 2,
-                MaxPlyaers = 4
+                MaxPlayers = 4
             },
             new BoardGame()
             {
@@ -119,7 +119,7 @@ namespace BoardGameTracker.Models
                 Type = "Strategy",
                 Mechanics = new List<string>() { "Resource Management", "Dice Rolling", "Route/Network Building", "Generative Board" },
                 MinPlayers = 2,
-                MaxPlyaers = 4
+                MaxPlayers = 4
             },
             new BoardGame()
             {
@@ -131,7 +131,7 @@ namespace BoardGameTracker.Models
                 Type = "Strategy",
                 Mechanics = new List<string>() { "Action Point System", "Hand Management" },
                 MinPlayers = 2,
-                MaxPlyaers = 4
+                MaxPlayers = 4
             },
             new BoardGame()
             {
@@ -143,7 +143,7 @@ namespace BoardGameTracker.Models
                 Type = "Party",
                 Mechanics = new List<string>() { "Press Your Luck", "Dice Rolling" },
                 MinPlayers = 2,
-                MaxPlyaers = 8
+                MaxPlayers = 8
             }
 
         };

@@ -1,5 +1,17 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
+<div style="height:10px;"></div>
 
-<board-game-list></board-game-list>
+<dom-bind>
+    <template>
+        <select value="{{typeFilter::change}}">
+            <option value=""></option>
+            <option value="Family">Family Games</option>
+            <option value="Strategy">Strategy Games</option>
+            <option value="Party">Party Games</option>
+        </select>  
+        <div style="height:25px;"></div>
+        <board-game-list typefilter="{{typeFilter}}"></board-game-list>
+    </template>
+</dom-bind>
